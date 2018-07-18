@@ -1,5 +1,3 @@
-package github;
-
 public class scenarioPhones {
 
 	public static void main(String[] args) {
@@ -8,7 +6,6 @@ public class scenarioPhones {
 		
 		System.out.println("The amount left with him after the purchase is " + (amount%cost));
 		
-
 	}
 
 }
