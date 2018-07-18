@@ -1,5 +1,3 @@
-package github;
-
 public class ArrayManipulation {
 	
 public static void main(String[] args) {
