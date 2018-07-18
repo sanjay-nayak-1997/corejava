@@ -1,5 +1,3 @@
-package github;
-
 public class scenarioGrade {
 
 	public static void main(String[] args) {
