@@ -1,5 +1,3 @@
-package github;
-
 public class MethodOverloading {
 	
 	public double findArea(Circle c)
