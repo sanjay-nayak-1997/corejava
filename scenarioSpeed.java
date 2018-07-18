@@ -1,5 +1,3 @@
-package github;
-
 public class scenarioSpeed {
 
 	public static void main(String[] args) {
