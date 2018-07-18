@@ -1,5 +1,3 @@
-package github;
-
 public class scenarioSalary {
 
 	public static void main(String[] args) {
