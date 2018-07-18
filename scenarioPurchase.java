@@ -1,5 +1,3 @@
-package github;
-
 public class scenarioPurchase {
 
 	public static void main(String[] args) {
