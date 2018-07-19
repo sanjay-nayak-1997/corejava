@@ -1,0 +1,27 @@
+Displaying the count of the records in the table 
+
+	SELECT COUNT(*) FROM EMPLOYEE;
+
+Displaying the count of certain records that match a particular condition
+
+	SELECT COUNT(*) FROM EMPLOYEE WHERE DEPATMENT = 'Accounts';
+
+Displaying the count of employees in each department
+
+	SELECT DEPARTMENT,COUNT(*) FROM EMPLOYEE GROUP BY DEPARTMENT;
+
+Displaying the count of employees in 'Accounts' department
+
+	SELECT DEPARTMENT,COUNT(*) FROM EMPLOYEE GROUP BY DEPARTMENT HAVING DEPARTMENT = 'Accounts';
+
+Displaying the count of employees where the number of employees is less than 2
+
+	SELECT DEPARTMENT,COUNT(*) FROM EMPLOYEE GROUP BY DEPARTMENT HAVING COUNT(*) < 2; 
+
+Displaying the sum of salary of employees in each department 
+
+	SELECT DEPARTMENT,SUM(EMPSALARY) FROM EMPLOYEE GROUP BY DEPARTMENT;
+
+Displaying the average of salary of employees in each department
+
+	SELECT DEPARTMENT,AVG(EMPSALARY) FROM EMPLOYEE GROUP BY DEPARTMENT;
