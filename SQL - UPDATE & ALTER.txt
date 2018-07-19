@@ -1,0 +1,22 @@
+Updating the single column of a record in a table
+
+	UPDATE EMPLOYEE SET EMPNAME = 'Mahesh' WHERE EMPID = 1001;
+
+Updating all the records in a table column
+
+	UPDATE EMPLOYEE SET EMPSALARY = 15000;
+
+Updating multiple columns of a record in a table
+
+	UPDATE EMPLOYEE SET EMPID = 1005, EMPNAME = "MANISH" WHERE EMPID = 1001;
+
+Altering the structure of the table
+
+	Adding columns into a database table
+
+		ALTER TABLE EMPLOYEE ADD(EMPSALARY NUMBER(10,2));
+
+	Changing the datatype or size of the database column
+
+		ALTER TABLE EMPLOYEE MODIFY(EMPSALARY NUMBER(6,2));
+
