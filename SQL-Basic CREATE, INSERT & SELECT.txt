@@ -1,0 +1,38 @@
+QUERIES
+
+Creation of a table 
+
+	CREATE TABLE EMPLOYEE2(EMPID NUMBER(5),EMPNAME VARCHAR(20),MGRID NUMBER(5));
+
+Inserting records into the table 
+
+	INSERT INTO EMPLOYEE2 VALUES(5, 'GURU', 2);
+
+Selecting / displaying all the records in the table
+
+	SELECT * FROM EMPLOYEE;
+
+Selecting / displaying certain records based on cretain condition
+
+	SELECT * FROM EMPLOYEE WHERE EMPNAME = 'Guru';
+
+Selecting only certain columns from a table
+
+	SELECT EMPID,EMPNAME FROM EMPLOYEE;
+
+Selecting those records in which the name starts with a particular letter
+
+	SELECT * FROM EMPLOYEE WHERE EMPNAME LIKE 'A%';
+
+Selecting those records in which the name has a particular letter or a set of letters in the middle of it
+
+	SELECT * FROM EMPLOYEE WHERE EMPNAME LIKE '%an%';
+
+Selecting those records in which the name starts with any letter but has other letters as defined
+
+	SELECT * FROM EMPLOYEE WHERE EMPNAME LIKE '_na';
+
+
+
+	
+	
