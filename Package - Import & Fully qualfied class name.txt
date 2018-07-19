@@ -1,0 +1,44 @@
+// Salem class in TN Package
+
+package TN;
+
+public class Salem {
+
+	public void callMethod()
+	{
+		System.out.println("This is Salem from TN package");
+	}
+	
+}
+
+// Salem class in US package
+
+package US;
+
+public class Salem {
+	
+	public void callMethod()
+	{
+		System.out.println("This is Salem from US package");
+	}
+		
+}
+
+//Main method class
+
+import TN.Salem; // Importing a class called 'Salem' from 'TN' package 
+
+public class mainMethod {
+
+	public static void main(String[] args) {
+		
+		Salem s=new Salem();
+		
+		s.callMethod(); // Calls the callMethod function from 'Salem' class of 'TN' package
+
+		US.Salem u=new US.Salem(); 
+		
+		u.callMethod(); // Calls the callMethod function from 'Salem' class of 'US' package
+	}
+
+}
