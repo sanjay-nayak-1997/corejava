@@ -1,6 +1,4 @@
-QUERIES
-
-Creation of a table 
+Creating a table 
 
 	CREATE TABLE EMPLOYEE2(EMPID NUMBER(5),EMPNAME VARCHAR(20),MGRID NUMBER(5));
 
@@ -31,8 +29,3 @@ Selecting those records in which the name has a particular letter or a set of le
 Selecting those records in which the name starts with any letter but has other letters as defined
 
 	SELECT * FROM EMPLOYEE WHERE EMPNAME LIKE '_na';
-
-
-
-	
-	
