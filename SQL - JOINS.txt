@@ -1,0 +1,18 @@
+
+Displaying the book name and author name of the books of which the book name is stores in BOOKS table 
+and the author name is stored in the AUTHOR table (JOIN)
+
+	SELECT B.BOOKNAME,A.AUTHORNAME FROM BOOKS B, AUTHOR A WHERE B.AUTHORID = A.AUTHORID;
+
+Displaying the author name and book name of the books even if the author has not published any books(LEFT OUTER JOIN)
+
+	SELECT A.AUTHORNAME,B.BOOKNAME FROM AUTHOR A LEFT JOIN BOOKS B WHERE A.AUTHORID = B.AUTHORID;
+
+Displaying the author name and book name of the books even if the book has no author specified (RIGHT OUTER JOIN)
+	
+	SELECT A.AUTHORNAME,B.BOOKNAME FROM AUTHOR A RIGHT JOIN BOOKS B WHERE A.AUTHORID = B.AUTHORID;
+
+Displaying the employee name and manager name of the employees from a single table (SELF JOIN)
+
+	SELECT E.EMPNAME,M.EMPNAME FROM EMPLOYEE E,EMPLOYEE M WHERE E.MANAGERID = M.EMPLOYEEID;
+
