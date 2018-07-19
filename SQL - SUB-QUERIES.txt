@@ -1,0 +1,19 @@
+Displaying the details of only those customers who have registered and  done any sales
+(Cutomers details and order details are in two different tables and CUSTID is a common column in both the tables)
+
+	SELECT C.CUSTID,C.CNAME FROM CUSTOMER C WHERE C.CUSTID IN(SELECT O.CUSTID FROM ORDER O);
+
+	SELECT C.CUSID,C.CNAME FROM CUS C WHERE EXISTS(SELECT * FROM ORD O WHERE C.CUSID=O.CUSTID); 
+
+Displaying the details of only those customers who have registered but have not done any sales 
+
+	SELECT C.CUSTID,C.CNAME FROM CUSTOMER C WHERE C.CUSTID NOT IN(SELECT O.CUSTID FROM ORDER O);
+	
+	SELECT C.CUSID,C.CNAME FROM CUS C WHERE NOT EXISTS(SELECT * FROM ORD O WHERE C.CUSID=O.CUSTID); 
+
+
+	
+
+	 
+
+	
