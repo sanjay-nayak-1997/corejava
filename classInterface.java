@@ -1,4 +1,3 @@
-package github;
 interface interface1
 {
 	public void switchOff();
