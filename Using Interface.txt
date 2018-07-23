@@ -1,0 +1,128 @@
+// Interface and its implementation in 2 different classes
+
+package github;
+interface interface1
+{
+	public void switchOff();
+	public void switchon();
+	public void changeChannel();
+	public void increaseVolume();
+	public void decreaseVolume();
+}
+class Sony implements interface1{
+
+	@Override
+	public void switchOff() {
+		
+		System.out.println("Switching off the Sony TV...");
+		
+	}
+
+	@Override
+	public void switchon() {
+		
+		System.out.println("Switching on the Sony TV...");
+		
+	}
+
+	@Override
+	public void changeChannel() {
+		
+		System.out.println("Changing the channel in Sony TV...");
+		
+	}
+
+	@Override
+	public void increaseVolume() {
+		
+		System.out.println("Increasing the volume in Sony TV...");
+		
+	}
+
+	@Override
+	public void decreaseVolume() {
+		
+		System.out.println("Decreasing the volume in Sony TV...");
+		
+	}
+
+}
+
+class Samsung implements interface1{
+
+	@Override
+	public void switchOff() {
+		
+		System.out.println("Switching off the Samsung TV");
+		
+	}
+
+	@Override
+	public void switchon() {
+		
+		System.out.println("Switching on the Samsung TV");
+		
+	}
+
+	@Override
+	public void changeChannel() {
+		
+		System.out.println("Changing the channel in Samsung TV");
+		
+	}
+
+	@Override
+	public void increaseVolume() {
+		
+		System.out.println("Increasing the volume in Sansung TV");
+		
+	}
+
+	@Override
+	public void decreaseVolume() {
+		
+		System.out.println("Decreasing the volume in Sansung TV");
+		
+	}
+	
+	
+}
+
+// A class for testing the interface 
+
+package github;
+
+public class testInterface{
+	
+	public static void main(String[] args) {
+		
+		Sony i=new Sony();
+		
+		i.switchon();
+		System.out.println();
+		i.changeChannel();
+		System.out.println();
+		i.increaseVolume();
+		System.out.println();
+		i.decreaseVolume();
+		System.out.println();
+		i.switchOff();
+		
+		System.out.println();
+		
+		Samsung j=new Samsung();
+		
+		j.switchon();
+		System.out.println();
+		j.changeChannel();
+		System.out.println();
+		j.increaseVolume();
+		System.out.println();
+		j.decreaseVolume();
+		System.out.println();
+		j.switchOff();
+		
+	}
+	
+}
+
