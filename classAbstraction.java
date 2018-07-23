@@ -1,5 +1,3 @@
-package github;
-
 abstract class Person1
 {
 	public boolean doesHeBreathe()
