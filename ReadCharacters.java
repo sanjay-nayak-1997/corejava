@@ -1,5 +1,3 @@
-package github;
-
 public class ReadCharacters {
 
 	public static void main(String[] args) {
